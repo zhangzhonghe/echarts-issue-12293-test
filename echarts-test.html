@@ -7,7 +7,7 @@
     <script src="echarts.js"></script>
     <style>
         #chart {
-            width: 600px;
+            width: 800px;
             height: 800px;
         }
     </style>
@@ -42,7 +42,7 @@
                     "1912"],
                     splitLine: {
                         show: true,
-                        interval: 3
+                        interval: val => val === 2 || val === 5 || val == 9
                     }
                 }
             ],
